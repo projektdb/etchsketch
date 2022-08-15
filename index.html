@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,3 +9,62 @@
     <script src="javascript.js" defer></script>
 
 </head>
+
+<body>
+    <div class = "header">
+        <div class = "header-text">
+            Etch-A-Sketch
+        </div>
+    </div>    
+    <div class = "main-container">
+        <div class = "center-container">
+            <div class = "sketch-control">
+                <div class="slidecontainer">
+                    <h3>Canvas Size</h3>
+                    <input type ="range" min="16" max="50" value="16" class="slider" id="myRange" onchange="changeSize(this.value)">
+                    <p>Size: <span id="demo" class = "demo"></span> </p>
+                    
+                </div>
+               
+                
+                <div class = "sketch-eraser">
+                    <button onclick="changeColor('white')">Eraser</button>
+                </div>
+                <div class = "sketch-clear">
+                    <button onclick="changeColor('black')">Black Pen</button>
+                </div>
+                <div class = "sketch-clear">
+                    <button onclick="changeColor('red')">Red Pen</button>
+                </div>
+                <div class = "sketch-clear">
+                    <button onclick="changeColor('blue')">Blue Pen</button>
+                </div>
+                <div class = "sketch-clear">
+                    <button onclick="clearBoard()">Clear</button>
+                </div>
+            </div>
+            <div class = "sketcher-frame">
+                <div class = "board">
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
